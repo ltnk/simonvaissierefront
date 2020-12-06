@@ -1,0 +1,16 @@
+.all-corpus {
+  height: 100%;
+  .corpus {
+    display: flex;
+    //START height - 70px of the header
+    height: 100%;
+    height: -webkit-calc(100% - 70px);
+    height: -moz-calc(100% - 70px);
+    height: calc(100% - 70px);
+    //END height - 70px of the header
+
+    .router-outlet {
+      width: 100%;
+    }
+  }
+}

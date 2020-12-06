@@ -1,0 +1,24 @@
+<section class="all-sim-projects-montage">
+  <div class="sim-projects-montage">
+    <div class="videos-container">
+      <h2>Mes derniers projets de montage</h2>
+      <div class="videos">
+        <div *ngFor="let video of videos" class="video-container">
+          <a href="{{ video.link }}"
+            ><img src="../../assets/posters/{{ video.img }}.jpg" alt=""
+          /></a>
+
+          <div class="video-desc">
+            <p class="cat-title">
+              <a href="{{ video.link }}">{{ video.category }}</a>
+            </p>
+            <p class="vid-title">
+              <a href="{{ video.link }}">{{ video.title }}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-sim-footer></app-sim-footer>

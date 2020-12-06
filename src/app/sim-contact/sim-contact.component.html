@@ -1,0 +1,121 @@
+<section class="all-sim-contact">
+  <div class="sim-contact">
+    <section>
+      <div class="send-me-email">
+        <a href="mailto:contact@simonvaissiere.com">
+          <img
+            src="../../assets/icons/mail.png"
+            alt="image d'une enveloppe"
+            width="80px"
+        /></a>
+      </div>
+      <div class="send-me-email">
+        <p>
+          <a href="mailto:simonvaissiere@gmail.com">simonvaissiere@gmail.com</a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="send-me-email">
+        <a
+          href="https://www.youtube.com/channel/UCylOPwn9TDvmsLqlaNZM9vA"
+          target="_blank"
+        >
+          <img
+            src="../../assets/icons/youtube.png"
+            alt="logo de youtube"
+            width="80px"
+        /></a>
+      </div>
+      <div class="send-me-email">
+        <p>
+          <a
+            href="https://www.youtube.com/channel/UCylOPwn9TDvmsLqlaNZM9vA"
+            target="_blank"
+            >Ma chaine youtube</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- // Formulaire de contact si on rétablie un back-end //
+    <p class="send-me-email">
+      Envoyez moi un email à l'adresse :
+      <a href="mailto:contact@simonvaissiere.com">contact@simonvaissiere.com</a>
+      ou utilisez le formulaire de contact ci-dessous.
+    </p>
+
+        <div class="contact-form" *ngIf="!formSent">
+      <form>
+        <p>Formulaire de contact</p>
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            placeholder="Votre email"
+            [formControl]="email"
+            required
+          />
+          <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            placeholder="Votre nom"
+            [formControl]="name"
+            required
+          />
+          <mat-error> Veuillez entrer votre nom !</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input
+            matInput
+            placeholder="Sujet"
+            [formControl]="subject"
+            required
+          />
+          <mat-error> Veuillez donner la raison de votre message.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <textarea
+            matInput
+            placeholder="Votre message"
+            [formControl]="message"
+            class="message"
+            required
+          ></textarea>
+          <mat-error>
+            Veuillez expliquer pourquoi vous souhaitez me contacter.</mat-error
+          >
+        </mat-form-field>
+      </form>
+
+      <div class="recaptcha">
+        <re-captcha
+          (resolved)="resolved($event)"
+          siteKey="6LfseMgUAAAAABz750GHvL20EJ2XcWpJ5iGYXw1u"
+        ></re-captcha>
+      </div>
+
+      <button
+        type="button"
+        mat-raised-button
+        color="primary"
+        (click)="submitForm()"
+      >
+        Envoyer
+      </button>
+    </div>
+
+    <div class="thank-you" *ngIf="formSent">
+      <img src="../../assets/icons/happy.png" alt="" />
+      <p>Merci pour votre message, je vous réponds au plus vite !</p>
+    </div>
+
+    -->
+  </div>
+</section>
+<app-sim-footer></app-sim-footer>

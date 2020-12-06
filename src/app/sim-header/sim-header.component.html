@@ -1,0 +1,192 @@
+<div class="sim-header">
+  <div class="sim-menu">
+    <button mat-button routerLink="/home" (click)="projectsClicked = false">
+      <h1>Simon Vaissière - Réalisateur</h1>
+    </button>
+    <button
+      mat-button
+      routerLink="/home"
+      routerLinkActive="mat-accent"
+      (click)="projectsClicked = false"
+    >
+      Accueil
+    </button>
+
+    <button
+      mat-button
+      routerLink="/simon"
+      routerLinkActive="mat-accent"
+      (click)="projectsClicked = false"
+    >
+      A propos
+    </button>
+
+    <button
+      mat-button
+      [matMenuTriggerFor]="projects"
+      [ngClass]="{ 'mat-accent': projectsClicked }"
+    >
+      Mes projets
+    </button>
+    <mat-menu #projects="matMenu">
+      <button
+        mat-menu-item
+        routerLink="/projects/shortfilm"
+        (click)="goToProject()"
+      >
+        Courts-métrages
+      </button>
+      <button
+        mat-menu-item
+        routerLink="/projects/montage"
+        (click)="goToProject()"
+      >
+        Montage
+      </button>
+    </mat-menu>
+
+    <button
+      mat-button
+      routerLink="/contact"
+      routerLinkActive="mat-accent"
+      (click)="projectsClicked = false"
+    >
+      Me contacter
+    </button>
+  </div>
+</div>
+
+<div class="sim-header-small">
+  <div class="sim-menu-small">
+    <button
+      class="h1-btn"
+      mat-button
+      routerLink="/home"
+      (click)="projectsClicked = false"
+    >
+      <h1>
+        Simon Vaissière
+      </h1>
+    </button>
+
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="gwmenu"
+      aria-label="Example icon-button with a menu"
+    >
+      <i class="material-icons">
+        menu
+      </i>
+    </button>
+    <mat-menu #gwmenu="matMenu">
+      <button
+        mat-menu-item
+        routerLink="/home"
+        routerLinkActive="mat-accent"
+        (click)="projectsClicked = false"
+      >
+        Accueil
+      </button>
+      <button
+        mat-menu-item
+        routerLink="/simon"
+        routerLinkActive="mat-accent"
+        (click)="projectsClicked = false"
+      >
+        A propos
+      </button>
+
+      <button
+        mat-menu-item
+        [matMenuTriggerFor]="projects"
+        [ngClass]="{ 'mat-accent': projectsClicked }"
+      >
+        Mes projets
+      </button>
+      <mat-menu #projects="matMenu">
+        <button
+          mat-menu-item
+          routerLink="/projects/shortfilm"
+          (click)="goToProject()"
+        >
+          Courts-métrages
+        </button>
+        <button
+          mat-menu-item
+          routerLink="/projects/montage"
+          (click)="goToProject()"
+        >
+          Montage
+        </button>
+      </mat-menu>
+
+      <button
+        mat-menu-item
+        routerLink="/contact"
+        routerLinkActive="mat-accent"
+        (click)="projectsClicked = false"
+      >
+        Me contacter
+      </button>
+    </mat-menu>
+
+    <!--  <button
+      mat-button
+      routerLink="/home"
+      routerLinkActive="mat-accent"
+      (click)="projectsClicked = false"
+    >
+      <i class="material-icons">
+        home
+      </i>
+    </button>
+
+    <button
+      mat-button
+      routerLink="/simon"
+      routerLinkActive="mat-accent"
+      (click)="projectsClicked = false"
+    >
+      <i class="material-icons">
+        info
+      </i>
+    </button>
+
+    <button
+      mat-button
+      [matMenuTriggerFor]="projects"
+      [ngClass]="{ 'mat-accent': projectsClicked }"
+    >
+      <i class="material-icons">
+        movie
+      </i>
+    </button>
+    <mat-menu #projects="matMenu">
+      <button
+        mat-menu-item
+        routerLink="/projects/shortfilm"
+        (click)="goToProject()"
+      >
+        Courts-métrages
+      </button>
+      <button
+        mat-menu-item
+        routerLink="/projects/montage"
+        (click)="goToProject()"
+      >
+        Montage
+      </button>
+    </mat-menu>
+
+    <button
+      mat-button
+      routerLink="/contact"
+      routerLinkActive="mat-accent"
+      (click)="projectsClicked = false"
+    >
+      <i class="material-icons">
+        email
+      </i>
+    </button> -->
+  </div>
+</div>

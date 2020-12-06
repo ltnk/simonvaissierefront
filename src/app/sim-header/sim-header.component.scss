@@ -1,0 +1,63 @@
+@media (min-width: 856px) {
+  .sim-header-small {
+    display: none;
+  }
+  .sim-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    .sim-menu {
+      margin: auto;
+      height: 100%;
+      h1 {
+        font-size: 1.7em;
+        font-family: 'Saira Stencil One', cursive;
+      }
+      button {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 0.9em;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        height: 100%;
+      }
+      button:not(.highlight-card):hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
+
+@media (max-width: 855px) {
+  .sim-header {
+    display: none;
+  }
+  .sim-header-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    .sim-menu-small {
+      margin: auto;
+      height: 100%;
+      h1 {
+        font-size: 1.1em;
+        font-family: 'Saira Stencil One', cursive;
+      }
+      .h1-btn {
+        height: 100%;
+      }
+      button {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 1.1em;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      button:not(.highlight-card):hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+}

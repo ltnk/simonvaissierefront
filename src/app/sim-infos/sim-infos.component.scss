@@ -1,0 +1,97 @@
+.sim-infos {
+  //START height - 70px of the footer
+  height: 100%;
+  height: -webkit-calc(100% - 70px);
+  height: -moz-calc(100% - 70px);
+  height: calc(100% - 70px);
+  //END height - 70px of the footer
+  overflow: scroll;
+  text-align: center;
+
+  .construction {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    h5 {
+      font-family: 'Varela Round', sans-serif;
+      font-size: 1em;
+    }
+    img {
+      width: 100px;
+    }
+
+    .videos-container {
+      padding: 20px;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      h2 {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 1em;
+      }
+      .videos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .video-container {
+          margin: 10px 10px 10px 0;
+          background-color: white;
+          padding: 10px;
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+          a {
+            img {
+              width: 300px;
+            }
+          }
+
+          .video-desc {
+            .cat-title {
+              margin: 15px 5px 0 5px;
+            }
+            .vid-title {
+              margin: 0px 5px 15px 5px;
+            }
+            p {
+              font-family: 'Varela Round', sans-serif;
+              font-size: 0.9em;
+              text-align: left;
+              a {
+                text-decoration: none;
+                color: rgb(48, 48, 48);
+              }
+              a:hover {
+                color: rgb(0, 92, 128);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sim-presentation {
+    background-image: url('../../assets/img/camera7.jpg');
+    padding: 40px;
+    div {
+      background-color: rgba(241, 241, 241, 0.5);
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  .sim-infos-detailed {
+    button {
+      font-family: 'Sulphur Point', sans-serif;
+      font-size: 1em;
+    }
+  }
+}
+
+/* @media (max-width: 405px) {
+  .sim-infos {
+    .sim-infos-detailed {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+} */

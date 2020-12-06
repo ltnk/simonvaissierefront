@@ -1,0 +1,88 @@
+<div class="sim-infos">
+  <div class="construction">
+    <h5>A propos de moi</h5>
+    <br />
+    <h5>En construction</h5>
+    <P>Nous mettons à jour cette section, elle sera bientôt disponible</P>
+
+    <img src="../../assets/icons/marteau.png" alt="" />
+
+    <p>N'hésitez pas à regarder mes derniers projets en attendant :</p>
+
+    <div class="videos-container">
+      <h2>Mes derniers projets</h2>
+      <div class="videos">
+        <div *ngFor="let video of videos" class="video-container">
+          <a href="{{ video.link }}"
+            ><img src="../../assets/posters/{{ video.img }}.jpg" alt=""
+          /></a>
+
+          <div class="video-desc">
+            <p class="cat-title">
+              <a href="{{ video.link }}">{{ video.category }}</a>
+            </p>
+            <p class="vid-title">
+              <a href="{{ video.link }}">{{ video.title }}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   <section>
+    <div class="sim-presentation">
+      <div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+          repellendus, eius labore illum quis repudiandae nemo? Quae, quam
+          possimus odit cumque necessitatibus fugiat suscipit natus, magnam
+          obcaecati repellat sunt velit. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Officiis assumenda quidem et voluptate
+          exercitationem. Ducimus, amet distinctio. Alias magnam asperiores
+          excepturi, possimus, ea, laudantium dolor illum fugit deserunt illo
+          mollitia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sim-infos-detailed">
+    <button
+      mat-button
+      (click)="goOnRealisation()"
+      [ngClass]="{ 'text-info': showRealisation }"
+    >
+      Réalisation
+    </button>
+    <button
+      mat-button
+      (click)="goOnScenariste()"
+      [ngClass]="{ 'text-info': showScenariste }"
+    >
+      Scénariste
+    </button>
+    <button
+      mat-button
+      (click)="goOnMontage()"
+      [ngClass]="{ 'text-info': showMontage }"
+    >
+      Montage
+    </button>
+    <button
+      mat-button
+      (click)="goOnFormation()"
+      [ngClass]="{ 'text-info': showFormation }"
+    >
+      Formation
+    </button>
+  </section>
+
+  <app-sim-realisation *ngIf="showRealisation"></app-sim-realisation>
+
+  <app-sim-scenariste *ngIf="showScenariste"></app-sim-scenariste>
+
+  <app-sim-montage *ngIf="showMontage"></app-sim-montage>
+
+  <app-sim-formation *ngIf="showFormation"></app-sim-formation> -->
+</div>
+<app-sim-footer class="footer"></app-sim-footer>
